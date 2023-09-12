@@ -19,6 +19,7 @@ use (
 	./plugins/mux
 	./plugins/grpc
 	./plugins/irisv12
+	./plugins/go-zero
 
 	./test/benchmark-codebase/consumer
 	./test/benchmark-codebase/provider

@@ -1,6 +1,6 @@
 module github.com/apache/skywalking-go/plugins/go-zero
 
-go 1.20
+go 1.18
 
 require (
 	github.com/apache/skywalking-go/plugins/core v0.0.0-20230911044748-989b03c38669

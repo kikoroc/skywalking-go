@@ -1,6 +1,12 @@
 /*
  * @Description:
  * @version: 1.0.0
+ * @Author: wangp@aeroht.com
+ * @Date: 2023-09-12 17:50:25
+ */
+/*
+ * @Description:
+ * @version: 1.0.0
  * @Author: kikoroc@gmail.com
  * @Date: 2023-09-12 17:25:52
  */
@@ -8,7 +14,6 @@ package rest
 
 import (
 	"github.com/apache/skywalking-go/plugins/core/operator"
-	"github.com/go-kratos/kratos/v2/transport/http"
 
 	"github.com/zeromicro/go-zero/rest"
 
@@ -35,7 +40,7 @@ func (n *NewServerInterceptor) AfterInvoke(invocation operator.Invocation, resul
 	}
 	// adding the middleware to the server
 	tracing.SetRuntimeContextValue(ignoreServerMiddlewareKey, true)
-	http.Middleware(serverMiddleware)(server)
+	server.Use(serverMiddleware)
 	serverEnhanced.SetSkyWalkingDynamicField(true)
 	return nil
 }

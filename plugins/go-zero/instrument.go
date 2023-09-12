@@ -45,20 +45,20 @@ func (i *Instrument) Points() []*instrument.Point {
 		{
 			PackagePath: "rest",
 			At: instrument.NewStaticMethodEnhance("NewServer",
-				instrument.WithArgsCount(2), 
-					instrument.WithArgType(0, "RestConf"), instrument.WithArgType(1, "...RunOption"),
-				instrument.WithResultCount(2), 
-					instrument.WithResultType(0, "*Server"), instrument.WithResultType(1, "error")),
+				instrument.WithArgsCount(2),
+				instrument.WithArgType(0, "RestConf"), instrument.WithArgType(1, "...RunOption"),
+				instrument.WithResultCount(2),
+				instrument.WithResultType(0, "*Server"), instrument.WithResultType(1, "error")),
 			Interceptor: "NewServerInterceptor",
 		},
-		{
+		/*{
 			PackagePath: "rest",
-			At: instrument.NewMethodEnhance("*Server", "Use", 
+			At: instrument.NewMethodEnhance("*Server", "Use",
 				instrument.WithArgsCount(1),
 				instrument.WithArgType(0, "Middleware"),
 				instrument.WithResultCount(0)),
 			Interceptor: "ServerMiddlewareInterceptor",
-		},
+		},*/
 	}
 }
 
