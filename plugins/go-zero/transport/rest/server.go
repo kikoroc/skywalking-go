@@ -1,12 +1,6 @@
 /*
  * @Description:
  * @version: 1.0.0
- * @Author: wangp@aeroht.com
- * @Date: 2023-09-12 17:50:25
- */
-/*
- * @Description:
- * @version: 1.0.0
  * @Author: kikoroc@gmail.com
  * @Date: 2023-09-12 17:25:52
  */
