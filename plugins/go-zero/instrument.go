@@ -4,7 +4,7 @@
  * @Author: kikoroc@gmail.com
  * @Date: 2023-09-12 15:40:20
  */
-
+//skywalking:nocopy
 package gozero
 
 import (
